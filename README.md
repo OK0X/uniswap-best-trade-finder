@@ -38,6 +38,6 @@ sortedInsert里面有一个策略函数tradeComparator(a: Trade, b: Trade)，tra
 2. 可能更好的方案
 - 把pair合约里面的event Sync(uint112 reserve0, uint112 reserve1)移到factory中来记录（当然还要记录下相应的token address），让pair合约调用factory的方法来触发事件，这样一个事件就可以监听所有pair合约中两种token储备量的变动。
 - create pair本身是有事件记录的。
-- 可以在nodejs后台监听以上两个事件，并将最新数据刷入redis缓存。
+- 可以在nodejs后台监听以上两个事件。
 - app端只需一次请求便可以获取所有有效pair及其储备量信息，无需通过useAllCommonPairs进行复杂计算和多次请求。甚至可以将bestTradeExactIn放在后端计算，这样一次请求便可快速获取best trade,然后app端直接用beast trade去swap即可。
 
