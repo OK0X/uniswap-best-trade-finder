@@ -46,14 +46,24 @@ sortedInsert里面有一个策略函数tradeComparator(a: Trade, b: Trade)，tra
 - 合约代码见https://github.com/OK0X/uniswapv2-factory和https://github.com/OK0X/uniswapv2-router2
 - 示例中用到的合约和交易对信息
 factory: 0x74073279A2809fAE01C63838061E58Ea19faB76A
+
 routerV2: 0xcF90da2D7134d4001FDE1094AAFE95593A9B5A22
+
 WETH：0x24564639ef1615887f23fefb2265289220894139
+
 DAI : 0x2c3af037312ab82a367799c27e3d4e7263c0f04d   
-USDT: 0x3c5A535D0bda6F11884e178c3AfA268154957e75    
+
+USDT: 0x3c5A535D0bda6F11884e178c3AfA268154957e75  
+
 CRO: 0xbe5F7BC290Cb4A98cbdFFa868F1Ab5CA68BaDFea  
+
 WETH/DAI    
+
 WETH/USDT 
-WETH/CRO  
-DAI/CRO 
+
+WETH/CRO
+
+DAI/CRO
+
 USDT/CRO
 
